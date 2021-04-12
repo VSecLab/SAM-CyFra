@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'eGov_RA.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'egov_db',
+        'NAME': 'prova2',
         'USER': 'root',
         'PASSWORD': '',
         'HOST':'localhost',

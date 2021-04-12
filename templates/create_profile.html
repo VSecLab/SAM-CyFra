@@ -21,7 +21,7 @@
             <tr>
                 <th>Subcategory </th>
                 <th>Priority Level</th>
-                <th>Maturity Level</th>
+
             </tr>
         </thead>
         <tbody>
@@ -40,19 +40,7 @@
                                 </select>
                             </ul>
                             </td>
-                            <td>
-                            <ul>
-                                <select name="maturity_level" id="{{ subcategory.id }}" class="form-control" style="width: 150px !important; min-width: 150px; max-width: 150px;" required>
-                                    {% for value in maturity_dict %}
-                                        {% if forloop.counter == forloop.parentloop.counter %}
-                                            {% for levels in value %}
-                                            <option id="{{ levels.level }}"> {{ levels.id }}, {{ levels.name}}: {{ levels.description }}, level: {{ levels.level }}</option>
-                                            {% endfor %}
-                                        {% endif %}
-                                    {% endfor %}
-                                </select>
-                            </ul>
-                            </td>
+
                         </tr>
                     {% endfor %}
                 </td>

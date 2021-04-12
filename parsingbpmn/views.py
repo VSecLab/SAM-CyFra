@@ -878,17 +878,11 @@ def create_profile(request,pk):
         temp=Subcategory.objects.filter(id=value['subcategory_id'])
         priority_of_subcat.append(value['priority'])
         subcategory_dict.append((list(temp.values()))[0])
-        maturity_levels=list((contextualization_has_maturity_levels.objects.filter(subcategory_contextualization_id=value['id']).values()))
-        maturitytemp=[]
-        for item in maturity_levels:
-            indexmat=item['maturity_level_id']
-            temp=list((Maturity_level.objects.filter(id=indexmat)).values())
-            maturitytemp.append(temp[0])
-        maturity_dict.append(maturitytemp)
+
 
     priority_list=["Bassa", "Media", "Alta"]
     request.session['list'] = subcategory_dict
-    return render(request, 'create_profile.html', {'form':form, 'subcategory_dict': subcategory_dict, 'priority_list': priority_list,'priority_of_subcat': priority_of_subcat , 'maturity_dict':maturity_dict,'context':context })
+    return render(request, 'create_profile.html', {'form':form, 'subcategory_dict': subcategory_dict, 'priority_list': priority_list,'priority_of_subcat': priority_of_subcat ,'context':context })
 
 def save_profile(request,pk):
     subcategory_dict=request.session['list']
@@ -901,11 +895,7 @@ def save_profile(request,pk):
             last_profile= Profile.objects.latest('id')
 
         priority= request.POST.getlist('priority')
-        matlev=request.POST.getlist('maturity_level')
-        matid=[]
-        for string in matlev:
-            splitted=string.split(",")
-            matid.append(splitted[0])
+
 
         sub_list=[]
         for dict in subcategory_dict:
@@ -913,7 +903,7 @@ def save_profile(request,pk):
             sub_list.append(sub_id)
 
         for i,subcategory in enumerate(sub_list,start=0):
-            newprofilehassubcategory= profile_has_subcategory(profile_id=last_profile.pk, subcategory_id=subcategory, priority=priority[i], maturity_level_id=matid[i])
+            newprofilehassubcategory= profile_has_subcategory(profile_id=last_profile.pk, subcategory_id=subcategory, priority=priority[i])
             newprofilehassubcategory.save()
 
     request.session['list']=subcategory_dict
@@ -1048,8 +1038,12 @@ def profile_evaluation(request,pk):
                 if subcategory['subcategory_id'] == subcat['subcategory_id']:
                     temp = []
                     newelement = comparingcontrols(subcat['control_id'],subcategory['control_id'], temp)
+                    provamaturity = profile_has_subcategory.objects.filter(profile_id=current_profile, subcategory_id=subcat['subcategory_id'])
                     if newelement != []:
+                        provamaturity.update(maturity_level_id=Maturity_level.objects.get(level=0,context_id=current_profile.context_id))
                         missing_controls.append({'subcategory_id': subcategory['subcategory_id'], 'control_id': newelement})
+                    else:
+                        provamaturity.update(maturity_level_id=Maturity_level.objects.get(level=1, context_id=current_profile.context_id))
 
         if not missing_controls:
             current_profile.level="minimo"
@@ -1058,8 +1052,14 @@ def profile_evaluation(request,pk):
                     if subcategory['subcategory_id'] == subcat['subcategory_id']:
                         temp = []
                         newelement = comparingcontrols(subcat['control_id'], subcategory['control_id'], temp)
+                        provamaturity = profile_has_subcategory.objects.filter(profile_id=current_profile,subcategory_id=subcat['subcategory_id'])
                         if newelement != []:
                             missing_controls.append({'subcategory_id': subcategory['subcategory_id'], 'control_id': newelement})
+                        else:
+                            matlev= Maturity_level.objects.get(level = 1, context_id=current_profile.context_id)
+                            if provamaturity.values()[0]['maturity_level_id'] == matlev.id:
+                                provamaturity.update(maturity_level_id=Maturity_level.objects.get(level=2, context_id=current_profile.context_id))
+
         else:
             current_profile.level="insufficiente"
 
@@ -1070,8 +1070,14 @@ def profile_evaluation(request,pk):
                     if subcategory['subcategory_id'] == subcat['subcategory_id']:
                         temp = []
                         newelement = comparingcontrols(subcat['control_id'], subcategory['control_id'], temp)
+                        provamaturity = profile_has_subcategory.objects.filter(profile_id=current_profile, subcategory_id=subcat['subcategory_id'])
                         if newelement != []:
                             missing_controls.append({'subcategory_id': subcategory['subcategory_id'], 'control_id': newelement})
+                        else:
+                            matlev = Maturity_level.objects.get(level=2, context_id=current_profile.context_id)
+                            if provamaturity.values()[0]['maturity_level_id'] == matlev.id:
+                                provamaturity.update(maturity_level_id=Maturity_level.objects.get(level=3, context_id=current_profile.context_id))
+
         elif(str(current_profile.level) == "None"):
             current_profile.level="minimo"
 

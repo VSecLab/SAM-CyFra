@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="556f64bf-ffa7-4acf-9b94-9994251378bf" name="Default Changelist" comment="- review" />
+    <list default="true" id="556f64bf-ffa7-4acf-9b94-9994251378bf" name="Default Changelist" comment="- review">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eGov_RA/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/eGov_RA/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsingbpmn/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/parsingbpmn/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsingbpmn/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/parsingbpmn/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/create_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/create_profile.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +48,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../eGov-prova - Copia" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -212,7 +221,7 @@
       <workItem from="1618218353040" duration="56000" />
       <workItem from="1618218417910" duration="3000" />
       <workItem from="1618218486002" duration="71000" />
-      <workItem from="1618218583685" duration="31000" />
+      <workItem from="1618218583685" duration="5936000" />
     </task>
     <task id="LOCAL-00004" summary="models update">
       <created>1613760178280</created>

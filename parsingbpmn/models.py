@@ -252,7 +252,7 @@ class profile_has_subcategory(models.Model):
    profile=models.ForeignKey(Profile, on_delete=models.CASCADE)
    subcategory=models.ForeignKey(Subcategory, on_delete=models.CASCADE)
    priority= models.CharField(max_length=100)
-   maturity_level = models.ForeignKey(Maturity_level, on_delete=models.CASCADE, default="3")
+   maturity_level = models.ForeignKey(Maturity_level, on_delete=models.CASCADE, null=True)
 
 
 class profile_maturity_control(models.Model):
