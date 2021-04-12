@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="556f64bf-ffa7-4acf-9b94-9994251378bf" name="Default Changelist" comment="- review" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1netLtUNM9QrzVCvLLAm1gRQqUu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eGov-prova - Copia" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LucyD\PycharmProjects\eGov_RA-v2\utils" />
+      <recent name="C:\Users\LucyD\PycharmProjects\eGov_RA-v2\processes\xml" />
+      <recent name="C:\Users\LucyD\PycharmProjects\eGov_RA-v2\parsingbpmn" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Django_conf" type="Python.DjangoServer" factoryName="Django server">
+      <module name="eGov_RA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="eGov_RA.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\LucyD\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="127.0.0.1" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <module name="eGov_RA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\LucyD\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="127.0.0.1" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="556f64bf-ffa7-4acf-9b94-9994251378bf" name="Default Changelist" comment="" />
+      <created>1611762333800</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611762333800</updated>
+      <workItem from="1611762336516" duration="1056000" />
+      <workItem from="1611765263720" duration="628000" />
+      <workItem from="1611771012617" duration="605000" />
+      <workItem from="1611843365818" duration="3983000" />
+      <workItem from="1611858789661" duration="781000" />
+      <workItem from="1611909926120" duration="2419000" />
+      <workItem from="1611917855131" duration="621000" />
+      <workItem from="1611936491187" duration="17000" />
+      <workItem from="1611936524910" duration="62000" />
+      <workItem from="1612103946763" duration="1828000" />
+      <workItem from="1612166834152" duration="596000" />
+      <workItem from="1612196271052" duration="602000" />
+      <workItem from="1612274917400" duration="1351000" />
+      <workItem from="1612278854630" duration="641000" />
+      <workItem from="1612280032111" duration="5119000" />
+      <workItem from="1612342057218" duration="627000" />
+      <workItem from="1612949672788" duration="7075000" />
+      <workItem from="1612967227906" duration="662000" />
+      <workItem from="1613052636498" duration="919000" />
+      <workItem from="1613383811993" duration="600000" />
+      <workItem from="1613404981782" duration="1639000" />
+      <workItem from="1613496761569" duration="1060000" />
+      <workItem from="1613499123037" duration="34000" />
+      <workItem from="1613742729108" duration="31000" />
+      <workItem from="1613742798841" duration="1331000" />
+      <workItem from="1613758460591" duration="619000" />
+      <workItem from="1613759481214" duration="97000" />
+      <workItem from="1613760162504" duration="28000" />
+      <workItem from="1613831121197" duration="12105000" />
+      <workItem from="1613892099790" duration="8702000" />
+      <workItem from="1613909587038" duration="7447000" />
+      <workItem from="1613930083061" duration="4003000" />
+      <workItem from="1613980491474" duration="13205000" />
+      <workItem from="1614000539053" duration="13700000" />
+      <workItem from="1614016412725" duration="351000" />
+      <workItem from="1614066772271" duration="2567000" />
+      <workItem from="1614088388922" duration="6051000" />
+      <workItem from="1614099974953" duration="3537000" />
+      <workItem from="1614157834154" duration="4755000" />
+      <workItem from="1614242202636" duration="11920000" />
+      <workItem from="1614326703154" duration="13170000" />
+      <workItem from="1614352646993" duration="9293000" />
+      <workItem from="1614415246907" duration="11018000" />
+      <workItem from="1614437239269" duration="31000" />
+      <workItem from="1614437970458" duration="6540000" />
+      <workItem from="1614586010309" duration="2852000" />
+      <workItem from="1614679218202" duration="12305000" />
+      <workItem from="1614703521647" duration="286000" />
+      <workItem from="1614758346860" duration="2312000" />
+      <workItem from="1614779772388" duration="12952000" />
+      <workItem from="1614844912706" duration="28756000" />
+      <workItem from="1614932522849" duration="11846000" />
+      <workItem from="1614951185599" duration="14017000" />
+      <workItem from="1615046478044" duration="3793000" />
+      <workItem from="1615051134762" duration="2869000" />
+      <workItem from="1615107869773" duration="10363000" />
+      <workItem from="1615128515401" duration="6372000" />
+      <workItem from="1615200085032" duration="3581000" />
+      <workItem from="1615218189780" duration="2323000" />
+      <workItem from="1615365159773" duration="653000" />
+      <workItem from="1615365869460" duration="24026000" />
+      <workItem from="1615450723542" duration="11164000" />
+      <workItem from="1615471986166" duration="9276000" />
+      <workItem from="1615536017735" duration="6199000" />
+      <workItem from="1615716699528" duration="680000" />
+      <workItem from="1615732405643" duration="3870000" />
+      <workItem from="1615795157548" duration="2546000" />
+      <workItem from="1615798260663" duration="4685000" />
+      <workItem from="1615882485669" duration="2087000" />
+      <workItem from="1615891563055" duration="1366000" />
+      <workItem from="1615916304247" duration="260000" />
+      <workItem from="1615916725735" duration="7834000" />
+      <workItem from="1615978021616" duration="1404000" />
+      <workItem from="1616250366071" duration="5139000" />
+      <workItem from="1616338921392" duration="1631000" />
+      <workItem from="1616346130288" duration="30000" />
+      <workItem from="1616507841398" duration="2544000" />
+      <workItem from="1616577063844" duration="1276000" />
+      <workItem from="1616598616337" duration="6275000" />
+      <workItem from="1616746895938" duration="11584000" />
+      <workItem from="1616834872543" duration="1369000" />
+      <workItem from="1616858963283" duration="2823000" />
+      <workItem from="1616924278766" duration="719000" />
+      <workItem from="1616942573464" duration="3861000" />
+      <workItem from="1617005317166" duration="3748000" />
+      <workItem from="1617201217237" duration="754000" />
+      <workItem from="1617261141289" duration="11163000" />
+      <workItem from="1617351078808" duration="11756000" />
+      <workItem from="1617435667708" duration="3247000" />
+      <workItem from="1617695756173" duration="775000" />
+      <workItem from="1617697738862" duration="69000" />
+      <workItem from="1617704566453" duration="3343000" />
+      <workItem from="1617866548392" duration="35000" />
+      <workItem from="1617866644324" duration="2344000" />
+      <workItem from="1617888362195" duration="4368000" />
+      <workItem from="1617953623615" duration="1372000" />
+      <workItem from="1617959702273" duration="3359000" />
+      <workItem from="1618070371736" duration="615000" />
+      <workItem from="1618217718627" duration="62000" />
+      <workItem from="1618217846590" duration="91000" />
+      <workItem from="1618217976701" duration="48000" />
+      <workItem from="1618218353040" duration="56000" />
+      <workItem from="1618218417910" duration="3000" />
+      <workItem from="1618218486002" duration="71000" />
+      <workItem from="1618218583685" duration="31000" />
+    </task>
+    <task id="LOCAL-00004" summary="models update">
+      <created>1613760178280</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613760178280</updated>
+    </task>
+    <task id="LOCAL-00005" summary="contextualization fusion implemented successfully">
+      <created>1613993785454</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613993785454</updated>
+    </task>
+    <task id="LOCAL-00006" summary="profile fusion implemented successfully">
+      <created>1614015004355</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614015004355</updated>
+    </task>
+    <task id="LOCAL-00007" summary="profile fusions implemented successfully">
+      <created>1614071775430</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614071775430</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Project merged">
+      <created>1614097742865</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614097742865</updated>
+    </task>
+    <task id="LOCAL-00009" summary="&quot;method&quot; removed from context">
+      <created>1614103525757</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1614103525757</updated>
+    </task>
+    <task id="LOCAL-00010" summary="profiles creation: problem solved">
+      <created>1614275533691</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1614275533691</updated>
+    </task>
+    <task id="LOCAL-00011" summary="missing control visualization improved">
+      <created>1614333394081</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1614333394081</updated>
+    </task>
+    <task id="LOCAL-00012" summary="custom creation of a new context done">
+      <created>1614359769052</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1614359769052</updated>
+    </task>
+    <task id="LOCAL-00013" summary="custom creation of a new profile with implemented controls done">
+      <created>1614426340924</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1614426340924</updated>
+    </task>
+    <task id="LOCAL-00014" summary="code adjustment">
+      <created>1614442056175</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1614442056175</updated>
+    </task>
+    <task id="LOCAL-00015" summary="custom maturity level for profiles added">
+      <created>1614444554293</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614444554293</updated>
+    </task>
+    <task id="LOCAL-00016" summary="selection of controls improved, change of contextualization and profile creation, fixes">
+      <created>1614702702039</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1614702702039</updated>
+    </task>
+    <task id="LOCAL-00017" summary="maturity level table added, fusion fixed">
+      <created>1614867649509</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1614867649510</updated>
+    </task>
+    <task id="LOCAL-00018" summary="create contextualization works">
+      <created>1614875982394</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1614875982394</updated>
+    </task>
+    <task id="LOCAL-00019" summary="maturity level uploaded, creation of context changed">
+      <created>1614882254598</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1614882254598</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Upload of a contextualization through excel file done">
+      <created>1614946210003</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1614946210003</updated>
+    </task>
+    <task id="LOCAL-00021" summary="selection of controls updated">
+      <created>1614966588591</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1614966588591</updated>
+    </task>
+    <task id="LOCAL-00022" summary="selection of controls fixed">
+      <created>1615118301741</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1615118301741</updated>
+    </task>
+    <task id="LOCAL-00023" summary="profile creation completed">
+      <created>1615132533658</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1615132533658</updated>
+    </task>
+    <task id="LOCAL-00024" summary="update">
+      <created>1615220519407</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1615220519407</updated>
+    </task>
+    <task id="LOCAL-00025" summary="changes:&#10;- creation of a profile updated&#10;- generation of target profiles">
+      <created>1615397573164</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1615397573164</updated>
+    </task>
+    <task id="LOCAL-00026" summary="changes:&#10;- profile cration completed&#10;- evaluation of profiles&#10;- missing controls for actual profiles">
+      <created>1615462097081</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1615462097081</updated>
+    </task>
+    <task id="LOCAL-00027" summary="changes:&#10;- export context &#10;- export profile">
+      <created>1615481323589</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1615481323589</updated>
+    </task>
+    <task id="LOCAL-00028" summary="changes:&#10;- fixes in evaluation profiles">
+      <created>1615539880553</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1615539880553</updated>
+    </task>
+    <task id="LOCAL-00029" summary="changes:&#10;- fixes in fusion profiles">
+      <created>1615540060203</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1615540060203</updated>
+    </task>
+    <task id="LOCAL-00030" summary="changes:&#10;- fixes in profile creation&#10;- export roadmap through csv">
+      <created>1615736410547</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1615736410547</updated>
+    </task>
+    <task id="LOCAL-00031" summary="changes:&#10;- changes in the profile's creation">
+      <created>1615916452273</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1615916452273</updated>
+    </task>
+    <task id="LOCAL-00032" summary="changes:&#10;- db updated">
+      <created>1615919299654</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1615919299654</updated>
+    </task>
+    <task id="LOCAL-00033" summary="changes:">
+      <created>1615920479485</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1615920479485</updated>
+    </task>
+    <task id="LOCAL-00034" summary="changes:&#10;- missing controls updated">
+      <created>1615933006000</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1615933006000</updated>
+    </task>
+    <task id="LOCAL-00035" summary="- excel file fixed&#10;- default priority and maturity level&#10;- db dump">
+      <created>1616250954196</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1616250954196</updated>
+    </task>
+    <task id="LOCAL-00036" summary="- fix of some errors">
+      <created>1616262173932</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1616262173932</updated>
+    </task>
+    <task id="LOCAL-00037" summary="- fix of some errors">
+      <created>1616262906326</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1616262906326</updated>
+    </task>
+    <task id="LOCAL-00038" summary="- fix of some errors">
+      <created>1616346139653</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1616346139653</updated>
+    </task>
+    <task id="LOCAL-00039" summary="- fix of some errors">
+      <created>1616513265539</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1616513265539</updated>
+    </task>
+    <task id="LOCAL-00040" summary="- fix of some errors&#10;- changes in the choice of controls&#10;- add controls added">
+      <created>1616608559651</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1616608559651</updated>
+    </task>
+    <task id="LOCAL-00041" summary="- fix of some errors">
+      <created>1616780101986</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1616780101986</updated>
+    </task>
+    <task id="LOCAL-00042" summary="- fix of some errors">
+      <created>1616868846724</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1616868846724</updated>
+    </task>
+    <task id="LOCAL-00043" summary="- fix of some errors">
+      <created>1616949234227</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1616949234227</updated>
+    </task>
+    <task id="LOCAL-00044" summary="- fix of some errors">
+      <created>1617033723212</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1617033723212</updated>
+    </task>
+    <task id="LOCAL-00045" summary="- regione campania's profile added">
+      <created>1617207677796</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1617207677796</updated>
+    </task>
+    <task id="LOCAL-00046" summary="- profile upgrade improved">
+      <created>1617272500879</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1617272500879</updated>
+    </task>
+    <task id="LOCAL-00047" summary="- profile upgrade improved">
+      <created>1617377903083</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1617377903083</updated>
+    </task>
+    <task id="LOCAL-00048" summary="- profile upgrade improved">
+      <created>1617441456686</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1617441456686</updated>
+    </task>
+    <task id="LOCAL-00049" summary="db updated">
+      <created>1617697796290</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1617697796290</updated>
+    </task>
+    <task id="LOCAL-00050" summary="- export modified">
+      <created>1617705978795</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1617705978795</updated>
+    </task>
+    <task id="LOCAL-00051" summary="- export modified">
+      <created>1617896541640</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1617896541644</updated>
+    </task>
+    <task id="LOCAL-00052" summary="- review">
+      <created>1617958885902</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1617958885903</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/LucyD/PycharmProjects/eGov_RA-v2/parsingbpmn" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="create contextualization works" />
+    <MESSAGE value="maturity level uploaded, creation of context changed" />
+    <MESSAGE value="Upload of a contextualization through excel file done" />
+    <MESSAGE value="selection of controls updated" />
+    <MESSAGE value="selection of controls fixed" />
+    <MESSAGE value="profile creation completed" />
+    <MESSAGE value="update" />
+    <MESSAGE value="changes:&#10;- creation of a profile updated&#10;- generation of target profiles" />
+    <MESSAGE value="changes:&#10;- profile cration completed&#10;- evaluation of profiles&#10;- missing controls for actual profiles" />
+    <MESSAGE value="changes:&#10;- export context &#10;- export profile" />
+    <MESSAGE value="changes:&#10;- fixes in evaluation profiles" />
+    <MESSAGE value="changes:&#10;- fixes in fusion profiles" />
+    <MESSAGE value="changes:&#10;- fixes in profile creation&#10;- export roadmap through csv" />
+    <MESSAGE value="changes:&#10;- changes in the profile's creation" />
+    <MESSAGE value="changes:&#10;- db updated" />
+    <MESSAGE value="changes:" />
+    <MESSAGE value="changes:&#10;- missing controls updated" />
+    <MESSAGE value="- excel file fixed&#10;- default priority and maturity level&#10;- db dump" />
+    <MESSAGE value="- fix of some errors&#10;- changes in the choice of controls&#10;- add controls added" />
+    <MESSAGE value="- fix of some errors" />
+    <MESSAGE value="- regione campania's profile added" />
+    <MESSAGE value="- profile upgrade improved" />
+    <MESSAGE value="db updated" />
+    <MESSAGE value="- export modified" />
+    <MESSAGE value="- review" />
+    <option name="LAST_COMMIT_MESSAGE" value="- review" />
+  </component>
+</project>

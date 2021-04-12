@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Create your current profile</h1>
+    <p style="font-family: 'Times New Roman';font-size: medium">
+        Click the button below to start the process of creating a new profile.
+    </p>
+    <form method="POST" action="{% url 'create_profile' context %}">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+     <h1>Generate target profile</h1>
+    <p style="font-family: 'Times New Roman';font-size: medium">
+        Select the control framework, the level and the name for the target profile you want.
+    </p>
+    <form method="POST" action="{% url 'generate_profile' context %}">
+        {% csrf_token %}
+        {{ profileform.as_p }}
+
+        <button type="submit" class="btn btn-primary">Generate</button>
+    </form>
+
+    <h1>Profile available</h1>
+    <p style="font-family: 'Times New Roman';font-size: medium">
+        You can select the profile from those already created to continue with the analysis.
+        It is also possible to delete one of the existing profile.
+    </p>
+
+     <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Framework</th>
+                <th>Level</th>
+                <th>Evaluate</th>
+                <th>Controls</th>
+                <th>Missing controls</th>
+                <th>Add controls</th>
+                <th>Export</th>
+                <th>Delete profile</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for profile in profiles %}
+                <tr>
+                    <td> {{ profile.name }}</td>
+                    <td> {{ profile.framework.name}}</td>
+                    <td> {{ profile.level }}</td>
+                    <td>
+                        {% if "target" not in profile.name %}
+                        <form method="POST" action="{% url 'profile_evaluation' profile.pk %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-primary btn-sm">Evaluate</button>
+                        </form>
+                        {% endif %}
+                        {% if "target" in profile.name %}
+                            N/A
+                        {% endif %}
+                    </td>
+                    <td>
+                        <form method="POST" action="{% url 'profile_roadmap' profile.pk %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-primary btn-sm">Show</button>
+                        </form>
+                    </td>
+                    <td>
+                        {% if "target" not in profile.name %}
+                        <form method="POST" action="{% url 'profile_missing' profile.pk %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-primary btn-sm">Show</button>
+                        </form>
+                        {% endif %}
+                        {% if "target" in profile.name %}
+                            N/A
+                        {% endif %}
+                    </td>
+                    <td >
+                        {% if "target" in profile.name %}
+                            N/A
+                        {% endif %}
+                         {% if "target" not in profile.name %}
+                        <form method="POST" action="{% url 'save_profile_controls' profile.pk %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-primary btn-sm">Add</button>
+                        </form>
+                        {% endif %}
+                    </td>
+                    <td >
+                        <form method="POST" action="{% url 'export_profile' profile.pk %}">
+                           {% csrf_token %}
+                            <button type="submit" class="btn btn-primary btn-sm">Export</button>
+                        </form>
+                    </td>
+                    <td >
+                        <form method="POST" action="{% url 'delete_profile' profile.pk %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger btn-sm">Delete profile</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h1>Profile upgrade</h1>
+    <p style="font-family: 'Times New Roman';font-size: medium">
+        Here you can select your actual profile and the target profile you want to reach
+    </p>
+    <form method="POST" action="{% url 'fusion_profile_perform' %}">
+        {% csrf_token %}
+        {{ fusionform.as_p }}
+    <button type="submit" class="btn btn-primary btn-sm">Fusion profiles</button>
+    </form>
+
+{% endblock %}

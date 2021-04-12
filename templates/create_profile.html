@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% load get_item from template_filters %}
+{% block content %}
+
+    <h1>Creation of a new profile:</h1>
+    <p style="font-family: 'Times New Roman';font-size: medium">
+        Choose a name and a control framework for your profile, then select the priority level and the maturity level for each subcategory
+    </p>
+    <form method="POST" name = "formname" action="{% url 'save_profile' context %}">
+        {% csrf_token %}
+        {{ form.name.errors}}
+        {{ form.name.label_tag}}
+        {{ form.name}}<br>
+        {{ form.framework.errors}}
+        {{ form.framework.label_tag}}
+        {{ form.framework}}
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Subcategory </th>
+                <th>Priority Level</th>
+                <th>Maturity Level</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    {% for subcategory in subcategory_dict %}
+                        <tr>
+                            <td>{{ subcategory.name}}: {{ subcategory.description}} </td>
+                            <td>
+                            <ul>
+                                <select name="priority" class="form-control" style="width: 150px !important; min-width: 150px; max-width: 150px;" required>
+                                     <option selected="selected">{{priority_of_subcat|index:forloop.counter0 }}</option>
+                                    {% for value in priority_list %}
+                                    <option>{{ value}}</option>
+                                    {% endfor %}
+                                </select>
+                            </ul>
+                            </td>
+                            <td>
+                            <ul>
+                                <select name="maturity_level" id="{{ subcategory.id }}" class="form-control" style="width: 150px !important; min-width: 150px; max-width: 150px;" required>
+                                    {% for value in maturity_dict %}
+                                        {% if forloop.counter == forloop.parentloop.counter %}
+                                            {% for levels in value %}
+                                            <option id="{{ levels.level }}"> {{ levels.id }}, {{ levels.name}}: {{ levels.description }}, level: {{ levels.level }}</option>
+                                            {% endfor %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                            </ul>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary btn-sm">save profile</button>
+    </form>
+
+    <script>
+
+        changematurity= function(id,level){
+            document.getElementById(id).selectedIndex = level+1 ;
+        }
+
+    </script>
+
+
+{% endblock %}

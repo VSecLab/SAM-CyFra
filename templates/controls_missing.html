@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% load get_item from template_filters %}
+{% block content %}
+
+    <h1>Missing controls</h1>
+    <p style="font-family: 'Times New Roman';font-size: medium">
+        In the table below are shown the subcategory with the missing controls.
+    </p>
+
+     <table class="table">
+        <thead>
+            <tr>
+                <th>Available</th>
+                <th>Subcategory </th>
+                <th>Controls</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    {% for subcategory in subcategory_clear_list %}
+                        <tr>
+                            <td>
+                                {{ subcategory_available|index:forloop.counter0 }}
+                            </td>
+                            <td>{{ subcategory}}: {{ subcategory.description}} </td>
+                            <td>
+                            <ol>
+                                {% for control in controls_clear_list|index:forloop.counter0 %}
+
+                                    <li> <b>{{ framework_clear_list|index:forloop.parentloop.counter0|index:forloop.counter0 }}:</b> {{ control}}- {{ control.description}} </li>
+
+                                {% endfor %}
+                            </ol>
+                            </td>
+                            </tr>
+                    {% endfor %}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+      <form method="POST" action="{% url 'export_roadmap' profilepk %}">
+            {% csrf_token %}
+            <button id="back" type="submit" class="btn btn-primary">Export as a CSV file</button>
+      </form>
+
+{% endblock %}
