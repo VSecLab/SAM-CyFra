@@ -1,4 +1,4 @@
-# eGov_RA
+# SAM-CyFra
 eGov_RA Repository is an client-server application that provides a tool to obtain a threat modeling of a particular process, provided that it has been modeled in bpmn.
 
 The application is developed using the following technologies:
